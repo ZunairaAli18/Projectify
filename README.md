@@ -1225,30 +1225,16 @@ Build Projectify from the source and intsall dependencies:
 
 Run the project with:
 
-**Using [docker](https://www.docker.com/):**
-```sh
-docker run -it {image_name}
-```
-**Using [pip](None):**
-```sh
-echo 'INSERT-RUN-COMMAND-HERE'
 ```
 **Using [npm](https://www.npmjs.com/):**
 ```sh
-npm start
+npm run dev
+```
+**Using [python](https://www.python.com/):**
+```sh
+python run.py
 ```
 
-### Testing
-
-Projectify uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [pip](None):**
-```sh
-echo 'INSERT-TEST-COMMAND-HERE'
-```
-**Using [npm](https://www.npmjs.com/):**
-```sh
-npm test
 ```
 
 ---
