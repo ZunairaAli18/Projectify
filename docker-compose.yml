@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:14.18
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "admin123/?"
+      POSTGRES_DB: postgresdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5431:5432"
+
+  backend:
+    build:
+      context: ./backend # Path to your backend repo
+      dockerfile: Dockerfile
+    container_name: flask-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:admin123/?@db:5432/postgresdb
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend # Path to your frontend repo
+      dockerfile: Dockerfile
+    container_name: next-frontend
+    ports:
+      - "3001:3000"
+    environment:
+      # Use service name "backend" so frontend can talk to backend inside Docker
+      - NEXT_PUBLIC_API_URL=http://backend:5000
+    volumes:
+      - ./frontend:/frontend/src/app
+      - /frontend/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:

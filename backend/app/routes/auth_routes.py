@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify, send_file
-from flask_restx import Resource
+# from flask_restx import Resource
 from app.db.stored_procs import (
     create_user, verify_user_credentials, get_all_projects_summary, getAllUsers,
     add_project, get_project_members_from_db, update_project_in_db,
