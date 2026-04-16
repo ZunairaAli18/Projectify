@@ -112,9 +112,9 @@ Projectify/
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**
-   ```bash
-   export DATABASE_URL=postgresql://postgres:admin123/?@localhost:5432/postgresdb
+4. **Create a `.env` file**
+   ```
+   DATABASE_URL=postgresql://postgres:admin123/?@localhost:5432/postgresdb
    ```
 
 5. **Run the backend server**
@@ -135,9 +135,9 @@ Projectify/
    npm install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   export NEXT_PUBLIC_API_URL=http://localhost:5000
+3. **Create a `.env.local` file**
+   ```
+   NEXT_PUBLIC_API_URL=http://localhost:5000
    ```
 
 4. **Run the development server**
@@ -145,26 +145,6 @@ Projectify/
    npm run dev
    ```
    The application will be available at http://localhost:3000
-
-## Environment Variables
-
-### Backend
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DATABASE_URL` | PostgreSQL connection string | `postgresql://postgres:admin123/?@db:5432/postgresdb` |
-
-### Frontend
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `NEXT_PUBLIC_API_URL` | Backend API URL | `http://localhost:5000` |
-
-## Docker Services
-
-| Service | Port | Description |
-|---------|------|-------------|
-| `frontend` | 3001:3000 | Next.js frontend |
-| `backend` | 5000:5000 | Flask API server |
-| `db` | 5431:5432 | PostgreSQL database |
 
 ## License
 
