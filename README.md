@@ -1,1313 +1,237 @@
-<div id="top">
+# Projectify
 
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
-
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
-# PROJECTIFY
-
-<em></em>
-
-<!-- BADGES -->
-<img src="https://img.shields.io/github/license/ZunairaAli18/Projectify?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-<img src="https://img.shields.io/github/last-commit/ZunairaAli18/Projectify?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/ZunairaAli18/Projectify?style=default&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/ZunairaAli18/Projectify?style=default&color=0080ff" alt="repo-language-count">
-
-<!-- default option, no dependency badges. -->
-
-
-<!-- default option, no dependency badges. -->
-
-</div>
-<br>
-
----
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-    - [Project Index](#project-index)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
----
-
-## Overview
-
-
-
----
+A modern, full-stack project management application built with Next.js and Flask. Projectify helps teams organize projects, track user stories with Kanban boards, manage team members, and stay on top of deadlines.
 
 ## Features
 
-<code>❯ REPLACE-ME</code>
+- **User Authentication** - Secure registration and login system with JWT-based sessions
+- **Project Management** - Create, update, and organize projects with deadlines and status tracking
+- **Kanban Board** - Drag-and-drop user stories across status columns (To Do, In Progress, Done)
+- **User Stories** - Create detailed user stories with descriptions, estimated time, and assignees
+- **Team Management** - Assign team members to projects and user stories
+- **Calendar View** - Visual calendar for tracking project deadlines and events
+- **File Attachments** - Upload and manage project documents and attachments
+- **Comments** - Collaborate with team members through story comments
+- **Search** - Search projects and team members across the platform
+- **Profile Management** - User profiles with department, contact info, and settings
 
----
+## Tech Stack
+
+### Frontend
+- **Framework**: Next.js 15 with Turbopack
+- **UI Library**: React 19
+- **State Management**: Redux Toolkit with Redux Persist
+- **Styling**: Tailwind CSS 4
+- **Drag & Drop**: react-dnd
+- **Calendar**: react-big-calendar
+- **Icons**: Lucide React
+
+### Backend
+- **Framework**: Flask 3.1
+- **Database**: PostgreSQL 14
+- **ORM**: Raw SQL with stored procedures
+- **Authentication**: PyJWT, bcrypt
+- **File Storage**: Local filesystem with Cloudinary support
+- **CORS**: Flask-CORS
+
+### Infrastructure
+- **Containerization**: Docker & Docker Compose
+- **Database**: PostgreSQL 14
 
 ## Project Structure
 
-```sh
-└── Projectify/
-    ├── backend
-    │   ├── .gitignore
-    │   ├── .vscode
-    │   ├── Dockerfile
-    │   ├── app
-    │   ├── docker-compose.yml
-    │   ├── requirements.txt
-    │   ├── run.py
-    │   └── uploads
-    └── frontend
-        ├── .gitignore
-        ├── Dockerfile
-        ├── docker-compose.yml
-        ├── eslint.config.mjs
-        ├── jsconfig.json
-        ├── next.config.mjs
-        ├── package-lock.json
-        ├── package.json
-        ├── postcss.config.mjs
-        ├── public
-        └── src
 ```
-
-### Project Index
-
-<details open>
-	<summary><b><code>PROJECTIFY/</code></b></summary>
-	<!-- __root__ Submodule -->
-	<details>
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ __root__</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-			</table>
-		</blockquote>
-	</details>
-	<!-- backend Submodule -->
-	<details>
-		<summary><b>backend</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ backend</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/Dockerfile'>Dockerfile</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/requirements.txt'>requirements.txt</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/run.py'>run.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/docker-compose.yml'>docker-compose.yml</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-			</table>
-			<!-- uploads Submodule -->
-			<details>
-				<summary><b>uploads</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ backend.uploads</b></code>
-					<!-- project-null Submodule -->
-					<details>
-						<summary><b>project-null</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-null</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-null.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-null/attachments/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-128 Submodule -->
-					<details>
-						<summary><b>project-128</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-128</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-128.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-128/attachments/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-11 Submodule -->
-					<details>
-						<summary><b>project-11</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-11</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-11.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-11/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-142 Submodule -->
-					<details>
-						<summary><b>project-142</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-142</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-142.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-142/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-143 Submodule -->
-					<details>
-						<summary><b>project-143</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-143</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-143.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-143/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-126 Submodule -->
-					<details>
-						<summary><b>project-126</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-126</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-126.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-126/attachments/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-8 Submodule -->
-					<details>
-						<summary><b>project-8</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-8</b></code>
-							<!-- userstory-52 Submodule -->
-							<details>
-								<summary><b>userstory-52</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-8.userstory-52</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-8/userstory-52/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-8.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-8/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-161 Submodule -->
-					<details>
-						<summary><b>project-161</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-161</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-161.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-161/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-59 Submodule -->
-					<details>
-						<summary><b>project-59</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-59</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-59/meta.json'>meta.json</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-							<!-- userstory-50 Submodule -->
-							<details>
-								<summary><b>userstory-50</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-59.userstory-50</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-59/userstory-50/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-59.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-59/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-59/attachments/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- userstory-39 Submodule -->
-							<details>
-								<summary><b>userstory-39</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-59.userstory-39</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-59/userstory-39/docker-compose.yml'>docker-compose.yml</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-163 Submodule -->
-					<details>
-						<summary><b>project-163</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-163</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-163.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-163/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-162 Submodule -->
-					<details>
-						<summary><b>project-162</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-162</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-162.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-162/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-57 Submodule -->
-					<details>
-						<summary><b>project-57</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-57</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-57/docker-compose.yml'>docker-compose.yml</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-						</blockquote>
-					</details>
-					<!-- project-166 Submodule -->
-					<details>
-						<summary><b>project-166</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-166</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-166.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-166/attachments/64235362-D0F5-478E-A1A3-DFD6BC47D810.json'>64235362-D0F5-478E-A1A3-DFD6BC47D810.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- userstory-56 Submodule -->
-							<details>
-								<summary><b>userstory-56</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-166.userstory-56</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-166/userstory-56/64235362-D0F5-478E-A1A3-DFD6BC47D810.json'>64235362-D0F5-478E-A1A3-DFD6BC47D810.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- project-undefined Submodule -->
-					<details>
-						<summary><b>project-undefined</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.uploads.project-undefined</b></code>
-							<!-- attachments Submodule -->
-							<details>
-								<summary><b>attachments</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ backend.uploads.project-undefined.attachments</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/uploads/project-undefined/attachments/meta.json'>meta.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
-			<!-- app Submodule -->
-			<details>
-				<summary><b>app</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ backend.app</b></code>
-					<!-- db Submodule -->
-					<details>
-						<summary><b>db</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.app.db</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/app/db/stored_procs.py'>stored_procs.py</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/app/db/mydb_schema.sql'>mydb_schema.sql</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/app/db/cludinaryconfig.py'>cludinaryconfig.py</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-						</blockquote>
-					</details>
-					<!-- routes Submodule -->
-					<details>
-						<summary><b>routes</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ backend.app.routes</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/backend/app/routes/auth_routes.py'>auth_routes.py</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
-		</blockquote>
-	</details>
-	<!-- frontend Submodule -->
-	<details>
-		<summary><b>frontend</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ frontend</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/Dockerfile'>Dockerfile</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/next.config.mjs'>next.config.mjs</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/jsconfig.json'>jsconfig.json</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/package-lock.json'>package-lock.json</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/package.json'>package.json</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/docker-compose.yml'>docker-compose.yml</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/postcss.config.mjs'>postcss.config.mjs</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/eslint.config.mjs'>eslint.config.mjs</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-			</table>
-			<!-- src Submodule -->
-			<details>
-				<summary><b>src</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ frontend.src</b></code>
-					<!-- store Submodule -->
-					<details>
-						<summary><b>store</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ frontend.src.store</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/store/index.js'>index.js</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-							<!-- slices Submodule -->
-							<details>
-								<summary><b>slices</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.store.slices</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/store/slices/authSlice.js'>authSlice.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- app Submodule -->
-					<details>
-						<summary><b>app</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ frontend.src.app</b></code>
-							<table style='width: 100%; border-collapse: collapse;'>
-							<thead>
-								<tr style='background-color: #f8f9fa;'>
-									<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-									<th style='text-align: left; padding: 8px;'>Summary</th>
-								</tr>
-							</thead>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/globals.css'>globals.css</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/tailwind.config.js'>tailwind.config.js</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/layout.js'>layout.js</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/redux-provider.jsx'>redux-provider.jsx</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/page.js'>page.js</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/debug-auth.jsx'>debug-auth.jsx</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-							</table>
-							<!-- login Submodule -->
-							<details>
-								<summary><b>login</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.login</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/login/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- components Submodule -->
-							<details>
-								<summary><b>components</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.components</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/ProfilePanel.js'>ProfilePanel.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/SingleProjectMembersPanel.js'>SingleProjectMembersPanel.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/SideBar.js'>SideBar.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/CalendarModal.js'>CalendarModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/BotPressChatbot.js'>BotPressChatbot.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/UserHeader.js'>UserHeader.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/SettingsHeader.js'>SettingsHeader.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/CustomCalendar.js'>CustomCalendar.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/Card.js'>Card.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/ProjectAttachments.js'>ProjectAttachments.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/Board.js'>Board.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/UserStporyDetails.js'>UserStporyDetails.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/ProjectCard.js'>ProjectCard.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/AddUserModal.js'>AddUserModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/ChangePasswordModal.js'>ChangePasswordModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/AddProjectModal.js'>AddProjectModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/Guard.js'>Guard.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/AddUserStoryModal.js'>AddUserStoryModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/SelectAttachmentsMOdal.js'>SelectAttachmentsMOdal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/Header.js'>Header.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/commentMOdal.js'>commentMOdal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/MemberProfile.js'>MemberProfile.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/AssignMemberButton.js'>AssignMemberButton.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/NavBar.js'>NavBar.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/PauseProjectModal.js'>PauseProjectModal.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/Column.js'>Column.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/components/MembersPanel.js'>MembersPanel.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- dashboard Submodule -->
-							<details>
-								<summary><b>dashboard</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.dashboard</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/dashboard/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- calendar Submodule -->
-							<details>
-								<summary><b>calendar</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.calendar</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/calendar/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- userstory_dashboard Submodule -->
-							<details>
-								<summary><b>userstory_dashboard</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.userstory_dashboard</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/userstory_dashboard/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- signup Submodule -->
-							<details>
-								<summary><b>signup</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.signup</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/signup/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- myprofile Submodule -->
-							<details>
-								<summary><b>myprofile</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.myprofile</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/myprofile/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- settings Submodule -->
-							<details>
-								<summary><b>settings</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.settings</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/settings/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-							<!-- members Submodule -->
-							<details>
-								<summary><b>members</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.app.members</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/app/members/page.js'>page.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- lib Submodule -->
-					<details>
-						<summary><b>lib</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ frontend.src.lib</b></code>
-							<!-- api Submodule -->
-							<details>
-								<summary><b>api</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ frontend.src.lib.api</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/searchMembers.js'>searchMembers.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/projects.js'>projects.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/fetchProjectAttachments.js'>fetchProjectAttachments.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/api.js'>api.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/Members.js'>Members.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/userstory.js'>userstory.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/ChangePassword.js'>ChangePassword.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='https://github.com/ZunairaAli18/Projectify/blob/master/frontend/src/lib/api/searchProjects.js'>searchProjects.js</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
-		</blockquote>
-	</details>
-</details>
-
----
+Projectify/
+├── frontend/                 # Next.js frontend application
+│   ├── src/
+│   │   ├── app/             # Next.js app router pages
+│   │   │   ├── components/  # Reusable React components
+│   │   │   ├── dashboard/   # Dashboard page
+│   │   │   ├── calendar/    # Calendar view
+│   │   │   ├── members/     # Team members page
+│   │   │   ├── settings/    # User settings
+│   │   │   └── ...
+│   │   ├── lib/api/         # API client functions
+│   │   └── store/           # Redux store and slices
+│   ├── Dockerfile
+│   └── package.json
+├── backend/                  # Flask backend application
+│   ├── app/
+│   │   ├── routes/          # API route handlers
+│   │   └── db/              # Database configuration and stored procedures
+│   ├── uploads/             # File upload storage
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── run.py               # Application entry point
+└── docker-compose.yml       # Docker orchestration
+```
 
 ## Getting Started
 
 ### Prerequisites
 
-This project requires the following dependencies:
+- [Docker](https://www.docker.com/) and Docker Compose
+- Node.js 18+ (for local development)
+- Python 3.9+ (for local development)
+- PostgreSQL 14+ (or use Docker)
 
-- **Programming Language:** JavaScript
-- **Package Manager:** Pip, Npm
-- **Container Runtime:** Docker
+### Quick Start with Docker
 
-### Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ZunairaAli18/Projectify.git
+   cd Projectify
+   ```
 
-Build Projectify from the source and intsall dependencies:
+2. **Start all services**
+   ```bash
+   docker-compose up --build
+   ```
 
-1. **Clone the repository:**
+3. **Access the application**
+   - Frontend: http://localhost:3001
+   - Backend API: http://localhost:5000
 
-    ```sh
-    ❯ git clone https://github.com/ZunairaAli18/Projectify
-    ```
+### Local Development
 
-2. **Navigate to the project directory:**
+#### Backend Setup
 
-    ```sh
-    ❯ cd Projectify
-    ```
+1. **Navigate to the backend directory**
+   ```bash
+   cd backend
+   ```
 
-3. **Install the dependencies:**
+2. **Create a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![docker][docker-shield]][docker-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [docker-shield]: https://img.shields.io/badge/Docker-2CA5E0.svg?style={badge_style}&logo=docker&logoColor=white -->
-	<!-- [docker-link]: https://www.docker.com/ -->
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-	**Using [docker](https://www.docker.com/):**
+4. **Set up environment variables**
+   ```bash
+   export DATABASE_URL=postgresql://postgres:admin123/?@localhost:5432/postgresdb
+   ```
 
-	```sh
-	❯ docker build -t ZunairaAli18/Projectify .
-	```
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![pip][pip-shield]][pip-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [pip-shield]: None -->
-	<!-- [pip-link]: None -->
+5. **Run the backend server**
+   ```bash
+   python run.py
+   ```
+   The API will be available at http://localhost:5000
 
-	**Using [pip](None):**
+#### Frontend Setup
 
-	```sh
-	❯ echo 'INSERT-INSTALL-COMMAND-HERE'
-	```
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![npm][npm-shield]][npm-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [npm-shield]: https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white -->
-	<!-- [npm-link]: https://www.npmjs.com/ -->
+1. **Navigate to the frontend directory**
+   ```bash
+   cd frontend
+   ```
 
-	**Using [npm](https://www.npmjs.com/):**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-	```sh
-	❯ npm install
-	```
+3. **Set up environment variables**
+   ```bash
+   export NEXT_PUBLIC_API_URL=http://localhost:5000
+   ```
 
-### Usage
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at http://localhost:3000
 
-Run the project with:
+## API Endpoints
 
-```
-**Using [npm](https://www.npmjs.com/):**
-```sh
-npm run dev
-```
-**Using [python](https://www.python.com/):**
-```sh
-python run.py
-```
+### Authentication
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/register` | Register a new user |
+| POST | `/login` | User login |
 
-```
+### Projects
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/projects` | Get all projects |
+| POST | `/addProject` | Create a new project |
+| POST | `/<project_id>/updateProject` | Update project details |
+| GET | `/<project_id>/getProjectMembers` | Get project members |
+| POST | `/<project_id>/assignMember` | Assign member to project |
+| PUT | `/projects/<project_id>/status` | Update project status |
 
----
+### User Stories
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/user-stories` | Create a new user story |
+| GET | `/user-stories/<story_id>` | Get user story details |
+| PUT | `/user-stories/<story_id>/edit` | Update user story |
+| POST | `/user-stories/all` | Get all stories for a project |
+| POST | `/user-story/<story_id>/update-status` | Update story status |
 
-## Roadmap
+### Events & Calendar
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/events` | Create a new event |
+| GET | `/events/<user_id>` | Get user events |
+| POST | `/update-event-deadline` | Update event deadline |
+| DELETE | `/delete-event/<event_id>` | Delete an event |
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+### Attachments
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/upload-attachment` | Upload a file attachment |
+| GET | `/download-attachment` | Download an attachment |
+| POST | `/assign-attachments` | Assign attachments to project |
 
----
+### Users & Profile
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/usersList` | Get all users |
+| POST | `/my-profile` | Get user profile |
+| PUT | `/update-profile` | Update user profile |
+| POST | `/change-password` | Change user password |
+| GET | `/departments` | Get all departments |
+
+## Environment Variables
+
+### Backend
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `DATABASE_URL` | PostgreSQL connection string | `postgresql://postgres:admin123/?@db:5432/postgresdb` |
+
+### Frontend
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `NEXT_PUBLIC_API_URL` | Backend API URL | `http://localhost:5000` |
+
+## Docker Services
+
+| Service | Port | Description |
+|---------|------|-------------|
+| `frontend` | 3001:3000 | Next.js frontend |
+| `backend` | 5000:5000 | Flask API server |
+| `db` | 5431:5432 | PostgreSQL database |
 
 ## Contributing
 
-- **💬 [Join the Discussions](https://github.com/ZunairaAli18/Projectify/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/ZunairaAli18/Projectify/issues)**: Submit bugs found or log feature requests for the `Projectify` project.
-- **💡 [Submit Pull Requests](https://github.com/ZunairaAli18/Projectify/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone https://github.com/ZunairaAli18/Projectify
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to github**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/ZunairaAli18/Projectify/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=ZunairaAli18/Projectify">
-   </a>
-</p>
-</details>
-
----
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-Projectify is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Credit `contributors`, `inspiration`, `references`, etc.
-
-<div align="right">
-
-[![][back-to-top]](#top)
-
-</div>
-
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
-
----
+- Built with [Next.js](https://nextjs.org/)
+- Backend powered by [Flask](https://flask.palletsprojects.com/)
+- UI components styled with [Tailwind CSS](https://tailwindcss.com/)
+- Icons by [Lucide](https://lucide.dev/)
