@@ -146,57 +146,6 @@ Projectify/
    ```
    The application will be available at http://localhost:3000
 
-## API Endpoints
-
-### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/register` | Register a new user |
-| POST | `/login` | User login |
-
-### Projects
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/projects` | Get all projects |
-| POST | `/addProject` | Create a new project |
-| POST | `/<project_id>/updateProject` | Update project details |
-| GET | `/<project_id>/getProjectMembers` | Get project members |
-| POST | `/<project_id>/assignMember` | Assign member to project |
-| PUT | `/projects/<project_id>/status` | Update project status |
-
-### User Stories
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/user-stories` | Create a new user story |
-| GET | `/user-stories/<story_id>` | Get user story details |
-| PUT | `/user-stories/<story_id>/edit` | Update user story |
-| POST | `/user-stories/all` | Get all stories for a project |
-| POST | `/user-story/<story_id>/update-status` | Update story status |
-
-### Events & Calendar
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/events` | Create a new event |
-| GET | `/events/<user_id>` | Get user events |
-| POST | `/update-event-deadline` | Update event deadline |
-| DELETE | `/delete-event/<event_id>` | Delete an event |
-
-### Attachments
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/upload-attachment` | Upload a file attachment |
-| GET | `/download-attachment` | Download an attachment |
-| POST | `/assign-attachments` | Assign attachments to project |
-
-### Users & Profile
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/usersList` | Get all users |
-| POST | `/my-profile` | Get user profile |
-| PUT | `/update-profile` | Update user profile |
-| POST | `/change-password` | Change user password |
-| GET | `/departments` | Get all departments |
-
 ## Environment Variables
 
 ### Backend
@@ -217,21 +166,6 @@ Projectify/
 | `backend` | 5000:5000 | Flask API server |
 | `db` | 5431:5432 | PostgreSQL database |
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- Backend powered by [Flask](https://flask.palletsprojects.com/)
-- UI components styled with [Tailwind CSS](https://tailwindcss.com/)
-- Icons by [Lucide](https://lucide.dev/)
+MIT
